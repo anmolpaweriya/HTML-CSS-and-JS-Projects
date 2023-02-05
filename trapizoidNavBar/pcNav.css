@@ -104,6 +104,7 @@ header>nav::after {
 #upperBtns .toolA>p {
     font-size: 1px;
     opacity: 0;
+    color:#000
 }
 
 #upperBtns .toolA:hover p,
