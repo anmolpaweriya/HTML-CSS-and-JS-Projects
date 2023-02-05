@@ -1,1 +1,171 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="js/script.js" defer></script>
+
+    <title>Anisole Player</title>
+</head>
+
+<body>
+
+    <button id="upload_form_toggle_btn"><i class="fa fa-upload"></i></button>
+    <!-- uploader division -->
+    <form id="upload_file_form" enctype="multipart/form-data">
+        <input type="text" id="playListNameId" placeholder="PlayList Name">
+        <label>
+            <!-- <a><img src="../img/upload.png"></a> -->
+            <!-- <input onchange='file_upload_input()' id='file_upload_input_id' type="file" style="display: none;" name="uploaded_file"> -->
+            <input type="file" id='uploaded_file' name="uploaded_file" multiple accept=".mp3,.wav">
+        </label>
+        <div id="filesList">
+
+            <!-- uploading file list will come here with js -->
+
+        </div>
+
+        <div id="uploadMessage">
+            <i style="color:aqua;">File size must be less than 10MB</i>
+
+        </div>
+
+        <input type="submit" value="Upload">
+
+        <!-- upload section -->
+
+    </form>
+    <!-- uploader division -->
+
+    <div id="files_menu">
+
+        <!-- player -->
+        <div class="playerControls">
+            <audio style="display:none" id="audioID" src="playlists/Anisole/impossible.mp3"></audio>
+
+            <div class="player">
+
+                <div class="title">
+                    <div id="trackImage">
+                        <img src="img/ap.png" alt="">
+                    </div>
+                    <div id="trackInfo">
+                        <h4>Impossible</h4>
+                        <p>Unknown Artist</p>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button id="previous">
+                        <i class="material-icons">skip_previous</i>
+                    </button>
+                    <button id="play" onclick="playBtn(this)">
+                        <i class="fa fa-play"></i>
+                    </button>
+                    <button id="next" onclick="nextSong(this)">
+                        <i class="material-icons">skip_next</i>
+                    </button>
+                </div>
+            </div>
+            <div class="progressBar">
+                <p id="playedTime">00:00</p>
+                <input type="range" value="0" max="248" id="progressSlider">
+                <p id="endTime">04:08</p>
+            </div>
+        </div>
+
+        <!-- player -->
+
+        <!-- heading -->
+        <div class="heading">
+            <h1>Welcome</h1>
+            <h3>To Enter In Ad Free World</h3>
+        </div>
+        <!-- heading -->
+
+
+        <!-- search system -->
+
+        <div id="searchType">
+            <button onclick="activeClassShift(this)" class="active">Song</button>
+            <button onclick="activeClassShift(this)">Playlist</button>
+        </div>
+        <div class="searchBar">
+            <input type="text" placeholder="  Search Song" id="searchBarInput">
+            <button type="submit" onclick="searchBtnFunc(this)">Search
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+
+
+        <div class="searchResultDiv">
+            <h3>Search Results</h3>
+            <div id="searchResultsList">
+                <div class="row">
+                    <div class="rowElement">S.no.</div>
+                    <div class="rowElement">Name</div>
+                    <div class="rowElement">Songs</div>
+                    <div class="rowElement">Popularity</div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- search system -->
+
+        <div class="homePlaylist">
+            <h3>Top Playlists</h3>
+            <div id="topPlaylists">
+
+            </div>
+        </div>
+        <div class="homeMusic">
+            <h3>Top Songs</h3>
+            <div id="topSongss">
+
+            </div>
+        </div>
+
+        <!-- popup playlist  -->
+        <div class="playlistTray">
+            <div class="playlistHeader">
+
+                <button onclick="playlistTrayBackBtn(this)"><i class="fa fa-arrow-left"></i></button>
+                <div class="description">
+
+                    <h1>Playlist Name</h1>
+                    <h4>269 songs</h4>
+                </div>
+
+            </div>
+            <div class="playListButtons">
+                <button><i class="fa fa-play"></i></button>
+            </div>
+
+            <div id="playlistSongsList">
+                <div class="row">
+                    <div class="rowElement">S.no.</div>
+                    <div class="rowElement">Name</div>
+                    <div class="rowElement"><i class="fa fa-clock-o"></i></div>
+                    <div class="rowElement">Popularity</div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- popup playlist  -->
+
+</body>
+
+</html>
