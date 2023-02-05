@@ -1,1 +1,38 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Floating Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js" defer></script> -->
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="floatProfile">
+        <form>
+            <h3>Anisole</h3>
+            <button>Log out</button>
+        </form>
+        <img src="ap.png" alt="" height="60">
+
+    </div>
+    <script>document.querySelector("#floatProfile>img").addEventListener("click", e => {
+            e.target.parentNode.firstElementChild.classList.toggle("show")
+        })</script>
+
+
+    <br>
+    <br>
+    <h1>Anisole</h1>
+    <p></p>
+
+</body>
+
+</html>
