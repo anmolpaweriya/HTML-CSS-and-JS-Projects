@@ -1,1 +1,113 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #181a1b;
+    color: rgb(175, 175, 175);
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.heading {
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Itim', cursive;
+    margin-top: 100px;
+}
+
+.mainDiv {
+    width: 80vw;
+    border: 1px solid gray;
+    margin: 50px auto;
+    position: relative;
+
+    padding: 20px;
+}
+
+.mainDiv>.status {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+#randomQuoteID {
+    padding: 1em 0px;
+    position: relative;
+    overflow-wrap: break-word;
+    letter-spacing: 2px;
+}
+
+#randomQuoteID::after {
+    content: "";
+    position: absolute;
+    top: var(--top);
+    left: var(--left);
+    height: 1em;
+    width: 2px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.mainDiv::before {
+    content: "Click To Active ... ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(40, 40, 40, 0.572);
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    opacity: var(--opacity);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.blur {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+.keyBoard {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border: 1px solid gray;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    background: #444;
+    margin: auto;
+
+}
+
+.keyBoard>.keyBoardRow {
+    display: flex;
+    gap: 2px;
+}
+
+.keyBoard>.keyBoardRow>.keyBoardKey {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    border: 1px solid gray;
+    background-color: rgb(34, 34, 34);
+    position: relative;
+    transition: all 0.1s ease-in-out;
+}
