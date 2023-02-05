@@ -1,1 +1,93 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #191919;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#page {
+    min-height: 130vh;
+    overflow: scroll;
+    background-color: #fff;
+    transform-origin: top left;
+    rotate: 0deg;
+    transition: all 0.5s ease-in-out;
+    padding: 50px;
+    padding-top: 100px;
+
+}
+
+::-webkit-scrollbar {
+    background-color: #fff;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+#navBtn {
+    background-color: orangered;
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    z-index: 10;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+    font-size: 30px;
+    color: #fff;
+    gap: 50px;
+    position: absolute;
+    /* top: 30px; */
+    top: -100px;
+    left: -100px;
+    rotate: -45deg;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#navBtn>i {
+    font-size: 30px;
+    rotate: 45deg;
+}
+
+#navBtn>h3 {
+    rotate: 45deg;
+}
+
+#navIcons {
+    position: absolute;
+    bottom: 100px;
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+#navIcons>h3 {
+    transition: all 0.5s ease-in-out;
+    margin-left: -100px;
+}
+
+#home {
+    margin-left: 20px;
+}
+
+#about {
+    margin-left: 40px;
+}
+
+#contact {
+    margin-left: 60px;
+}
