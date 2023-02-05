@@ -1,1 +1,336 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1 class="heading">Increase Your speed</h1>
+    <div class="mainDiv">
+        <div class="status">
+            <div class="speed">
+                <h3>Speed: <span id="speedID">0</span> wpm</h3>
+            </div>
+            <div class="Accuracy">
+                <h3>Accuracy: <span id="accuracyID">0</span>%</h3>
+
+            </div>
+            <div class="Score">
+                <h3>Total Score: <span id="scoreID">0</span></h3>
+
+            </div>
+        </div>
+        <h1 id="randomQuoteID" class="blur"></h1>
+    </div>
+
+    <div class="keyBoard">
+        <div class="keyBoardRow">
+            <div class="keyBoardKey">
+                <p id="~">~</p>
+                <p id="`">`</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="!">!</p>
+                <p id="1">1</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="@">@</p>
+                <p id="2">2</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="#">#</p>
+                <p id="3">3</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="$">$</p>
+                <p id="4">4</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="%">%</p>
+                <p id="5">5</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="^">^</p>
+                <p id="6">6</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="&amp;amp;">&amp;</p>
+                <p id="7">7</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="*">*</p>
+                <p id="8">8</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="(">(</p>
+                <p id="9">9</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id=")">)</p>
+                <p id="0">0</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="_">_</p>
+                <p id="-">-</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="+">+</p>
+                <p id="=">=</p>
+            </div>
+            <div class="keyBoardKey" style="
+    min-width: 130px;
+">
+                <p id="Backspace">Backspace</p>
+            </div>
+
+        </div>
+        <div class="keyBoardRow">
+            <div class="keyBoardKey" style="
+    min-width: 90px;
+">
+                <p id="Tab">Tab</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="Q">Q</p>
+                <p id="q" style="display: none;"></p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="W">W</p>
+                <p id="w" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="E">E</p>
+                <p id="e" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="R">R</p>
+                <p id="r" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="T">T</p>
+                <p id="t" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="Y">Y</p>
+                <p id="y" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="U">U</p>
+                <p id="u" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="I">I</p>
+                <p id="i" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="O">O</p>
+                <p id="o" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="P">P</p>
+                <p id="p" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="{">{</p>
+                <p id="[">[</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="}">}</p>
+                <p id="]">]</p>
+            </div>
+            <div class="keyBoardKey" style="
+    min-width: 90px;
+">
+                <p id="|">|</p>
+                <p id="\">\</p>
+            </div>
+        </div>
+        <div class="keyBoardRow">
+            <div class="keyBoardKey" style="
+    min-width: 110px;
+">
+                <p id="CapsLock">CapsLock</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="A">A</p>
+                <p id="a" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="S">S</p>
+                <p id="s" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="D">D</p>
+                <p id="d" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="F">F</p>
+                <p id="f" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="G">G</p>
+                <p id="g" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="H">H</p>
+                <p id="h" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="J">J</p>
+                <p id="j" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="K">K</p>
+                <p id="k" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="L">L</p>
+                <p id="l" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id=":">:</p>
+                <p id=";">;</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="&quot;">"</p>
+                <p id="'">'</p>
+            </div>
+            <div class="keyBoardKey" style="
+    min-width: 124px;
+">
+                <p id="Enter">Enter</p>
+            </div>
+        </div>
+
+        <div class="keyBoardRow">
+            <div class="keyBoardKey" style="min-width: 130px;">
+                <p id="Shift">Shift</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="Z">Z</p>
+                <p id="z" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="X">X</p>
+                <p id="x" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="C">C</p>
+                <p id="c" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="V">V</p>
+                <p id="v" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="B">B</p>
+                <p id="b" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="N">N</p>
+                <p id="n" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="M">M</p>
+                <p id="m" style="display: none;"></p>
+
+            </div>
+            <div class="keyBoardKey">
+                <p id="&amp;lt;">&lt;</p>
+                <p id=",">,</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="&amp;gt;">&gt;</p>
+                <p id=".">.</p>
+            </div>
+            <div class="keyBoardKey">
+                <p id="?">?</p>
+                <p id="/">/</p>
+            </div>
+            <div class="keyBoardKey" style="
+    min-width: 157px;
+">
+                <p id="Shift">Shift</p>
+            </div>
+        </div>
+
+        <div class="keyBoardRow">
+
+            <div class="keyBoardKey">
+                <p id="Control">Ctrl</p>
+            </div>
+
+            <div class="keyBoardKey">
+                <p id="Win">Win</p>
+            </div>
+
+            <div class="keyBoardKey">
+                <p id="Alt">Alt</p>
+            </div>
+
+            <div class="keyBoardKey" style="
+    min-width: 345px;
+">
+                <p id="Space">Space</p>
+            </div>
+
+            <div class="keyBoardKey">
+                <p id="Alt">Alt</p>
+            </div>
+
+            <div class="keyBoardKey">
+                <p id="PrtSc">PrtSc</p>
+            </div>
+
+            <div class="keyBoardKey">
+                <p id="Control">Ctrl</p>
+            </div>
+
+            <div class="keyBoardKey">
+                <p id="PgUp">PgUp</p>
+            </div>
+
+            <div class="keyBoardKey">
+                <p id="ArrowUp"> ↑</p>
+            </div>
+
+            <div class="keyBoardKey">
+                <p id="PgDn">PgDn</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
