@@ -17,6 +17,9 @@ There are Some basic frontEnd Projects (HTML, CSS and JS Projects)
 |9.| [Site Template](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/siteTemplate/)  | responsive Site Template |
 |10.| [Rotate Nav Bar](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/rotateNavBar/)  | cool rotation animated nav bar |
 |11.| [Trapizoidal Nav Bar](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/trapizoidNavBar/)  | cool Trapizoidal PC nav bar |
+|12.| [Typing Practice](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/typingPractice/)  | Increase Your typing speed with practice |
+
+
 
 ## Official Site
 
