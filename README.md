@@ -11,6 +11,7 @@ There are Some basic frontEnd Projects (HTML, CSS and JS Projects)
 |3.| [Float Profile](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/floatProfile/)  | floating profile Button |
 |4.| [Image Search](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/imageSearch/)  | Image Search engine |
 |5.| [Magic Brick](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/magicBrick/)  | Magic Brick clone |
+|6.| [Button Nav](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/btnNav/)  | Mobile Floating Buttons Navigation Bar |
 
 
 ## Official Site
