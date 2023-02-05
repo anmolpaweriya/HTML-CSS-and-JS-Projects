@@ -1,1 +1,52 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Board</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="icon" href="../img/ap.png">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <a href='../index.php' id='home_btn'><i class="material-icons">home</i></a>
+    <div class="drawing_body">
+
+
+        <canvas id='drawing_board'></canvas>
+        <div class="menu">
+            <div>
+                <button id="brush"><i class="fa fa-paint-brush active"></i></button>
+                <button id="shapes"><img src="shapes.png" width="20"></button>
+                <input type="checkbox" id='fillCheck'>
+
+
+
+                <button id="eraser"><i class="fa fa-eraser"></i></button>
+
+                <button id="clear_canvas"><i class="material-icons">delete</i></button>
+                <label id="color_label">
+                    <div></div>
+                    <input type="color" id="color_picker">
+                </label>
+            </div>
+            <input type="range" id="slider">
+        </div>
+    </div>
+    <div id="cursor">
+        <img src="pen.ico">
+    </div>
+
+
+</body>
+
+</html>
