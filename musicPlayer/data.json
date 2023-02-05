@@ -1,1 +1,19 @@
 
+[
+    {
+        "playlistName": "Anisole",
+        "playlistPopularity": 0,
+        "songList": [
+            {
+                "songName": "impossible.mp3",
+                "duration": 248.354189,
+                "songPopularity": 0
+            },
+            {
+                "songName": "Astronaut-In-The-Ocean.mp3",
+                "duration": 152.283922,
+                "songPopularity": 1
+            }
+        ]
+    }
+]
