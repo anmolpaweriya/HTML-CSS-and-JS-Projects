@@ -1,1 +1,98 @@
 
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    box-sizing: border-box;
+    /* cursor: url('pen.ico'), auto; */
+}
+
+canvas {
+    width: 100vw;
+    height: 90vh;
+}
+
+#shapes {
+    filter: invert();
+}
+
+#home_btn {
+    position: fixed;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#home_btn>i {
+    font-size: 50px;
+}
+
+#color_label>div {
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 5px 0;
+    border: 2px solid aqua;
+}
+
+#color_label>#color_picker {
+    display: none;
+}
+
+
+#cursor {
+    background: #fff;
+    /* width: 5px;
+    height: 5px; */
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none
+}
+
+#cursor>img {
+    margin-top: -100px;
+}
+
+.menu {
+    height: 7vh;
+    width: 100vw;
+    border-top: 1px solid aqua;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.menu>div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+
+.menu button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.menu button>i {
+    color: #fff;
+}
+
+.active {
+    color: aqua !important;
+}
+
+
+.menu #slider {
+    padding-top: 10px;
+    width: 80%;
+}
