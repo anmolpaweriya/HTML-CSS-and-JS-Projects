@@ -1,1 +1,286 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: rgb(255, 77, 0);
+}
+
+body,
+html {
+    overflow-x: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    justify-content: space-between;
+    /* background-color: #fff; */
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    z-index: 69;
+
+}
+
+nav>.mobileNavBtn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: inherit;
+}
+
+nav>.pcNavBtn,
+#mobileNav li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+nav a {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li:hover,
+a:hover {
+    color: var(--hover-color, #000);
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 2px;
+    background-color: var(--main-color);
+}
+
+.scrolled {
+    background-color: #fff !important;
+    color: #000 !important;
+    border-bottom: 1px solid gray !important;
+    padding: 10px 40px !important;
+}
+
+.scrolled a {
+    color: #000
+}
+
+
+
+.banner {
+    width: 100vw;
+    height: 100vh;
+    /* background: #3b4a54; */
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    flex-flow: column;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.banner>h1 {
+    transform: translateY(-70px);
+    -webkit-text-stroke: 1px #000;
+    font-size: 3em;
+
+}
+
+.banner>h1>span {
+    color: #009cff;
+    font-size: 2em;
+    position: relative;
+    top: 10%;
+}
+
+.banner>p {
+    font-size: 1rem;
+    padding: 0px 50px;
+    margin-top: -50px;
+}
+
+.banner>p>span {
+    color: #009cff;
+    font-size: 2em;
+    position: relative;
+    top: 5px;
+}
+
+
+.content {
+    margin: 20px 10vw;
+}
+
+.content>h1 {
+    margin: 10px -3vw;
+
+}
+
+#mobileNav {
+    position: fixed;
+    background: #fff;
+    color: #000;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 200px 100px;
+    z-index: 100;
+    font-size: 1.5em;
+    left: -100%;
+    transition: all 0.5s ease-in-out;
+
+}
+
+#mobileNav a {
+    color: #000;
+    text-decoration: none;
+}
+
+#mobileNav>ul {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+#cancelBtn {
+    border: none;
+    background-color: transparent;
+    margin-top: 50px;
+}
+
+#cancelBtn>i {
+    font-size: 50px;
+}
+
+.container {
+    width: 100%;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-flow: row wrap;
+    position: relative;
+
+
+}
+
+.container>div {
+    background-color: #fff;
+    width: 300px;
+    /* width: 50%; */
+    position: relative;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container>div>div {
+    width: 100%;
+    overflow: hidden;
+    /* border: 1px solid #000; */
+    border-radius: 10px;
+    height: 200px;
+    position: relative;
+
+}
+
+.container>div>h3,
+.container>div>p {
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.container>div>p {
+    font-size: 12px;
+}
+
+.container>div::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent, #fff);
+    height: 50px;
+    bottom: 0;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    width: 100vw;
+    height: 90%;
+    z-index: -10;
+    top: 100px;
+}
+
+.container>div>.imgDiv::after {
+    content: attr(data-value);
+    font-size: 30px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #191919c5;
+    top: 0;
+    scale: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.container>div:hover .imgDiv::after {
+    scale: 1;
+    /* display: none; */
+}
+
+/* media query */
+
+
+@media (width <=660px) {
+    nav>.mobileNavBtn {
+        display: inline-block;
+    }
+
+    nav>.pcNavBtn {
+        display: none;
+    }
+
+    .banner>h1 {
+        font-size: 2em;
+    }
+}
+
+@media (width >1500px) {
+    nav {
+        padding: 20px 200px;
+
+    }
+
+
+    .scrolled {
+
+        padding: 10px 200px !important;
+    }
+
+    .content {
+        margin: 20px 20vw;
+    }
+}
