@@ -1,1 +1,137 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #181a1b;
+    color: white;
+    min-height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+#mainPage>h1 {
+    font-family: 'Pacifico', cursive;
+    color: aqua;
+    text-align: center;
+    font-size: 90px;
+}
+
+#searchDiv {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#searchDiv>input[type="text"] {
+    border-radius: 30px;
+    font-size: 30px;
+    padding: 10px 15px;
+    outline: none;
+}
+
+
+#searchBtn {
+    border: none;
+    border-radius: 50%;
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+
+}
+
+#searchBtn:hover {
+    background-color: rgba(0, 255, 255, 0.422);
+}
+
+#resultDiv {
+    margin: 75px;
+    max-height: 70vh;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+
+}
+
+
+
+#popUpBox {
+    position: absolute;
+    /* border: 10px solid red; */
+    background-color: #e9e8e8;
+    width: 80vw;
+    height: 50vh;
+    border-radius: 30px;
+    left: 10vw;
+    transition: all 1s ease-in-out;
+    top: 25vh;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    box-shadow: 0px 0px 10px gray, inset 0px 0px 10px gray;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+#popUpBox>.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+#popUpCancel {
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+#downloadBtn {
+    background-color: #191919;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#popUpBox>img {
+    height: 80%;
+
+    border-radius: 20px;
+    object-fit: cover;
+
+
+}
+
+.hide {
+    top: -90vh !important;
+}
+
+.gImg {
+    width: 20vw;
+    margin: 20px;
+    border-radius: 20px;
+    height: 100%;
+    object-fit: cover;
+    min-width: 500px;
+}
