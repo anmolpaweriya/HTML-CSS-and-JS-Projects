@@ -7,7 +7,7 @@ There are Some basic frontEnd Projects (HTML, CSS and JS Projects)
 | S.no.| Name | Description|
 |:-----:|:-----:|:--------:|
 |1.| [Drawing Board](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/drawing/)  | drawing board to draw anything in Browser |
-|     2.       | [Expanding Card](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/ExpandingCards/)  | Expands card on click with animation |
+|     2.       | [Expanding Card](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/expandingCards/)  | Expands card on click with animation |
 
 
 
