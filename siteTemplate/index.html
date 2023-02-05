@@ -1,1 +1,123 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>info</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h3>info.com</h3>
+            <ul class="pcNavBtn">
+                <li>
+                    <a href="#homeBtn">Home</a>
+                </li>
+                <li>
+                    <a>Store</a>
+                </li>
+                <li>
+                    <a href="#aboutBtn">About</a>
+                </li>
+                <li>
+                    <a href="#contactUsBtn">Contact Us</a>
+                </li>
+
+            </ul>
+            <button onclick="menuBtn(this)" class="mobileNavBtn"><i class="material-icons">menu</i></button>
+        </nav>
+        <div id="mobileNav">
+            <ul>
+                <li>
+                    <a onclick="navBtnClick(this)" href="#homeBtn">Home</a>
+                </li>
+                <li>
+                    <a onclick="navBtnClick(this)">Store</a>
+                </li>
+                <li>
+                    <a onclick="navBtnClick(this)" href="#aboutBtn">About</a>
+                </li>
+                <li>
+                    <a onclick="navBtnClick(this)" href="#contactUsBtn">Contact Us</a>
+                </li>
+
+            </ul>
+            <button id="cancelBtn" onclick="cancelNavBtn(this)"><i class="material-icons">cancel</i></button>
+        </div>
+    </header>
+
+
+    <!-- <img src="Tea-main.jpeg" class="bannerImg"> -->
+    <div class="banner" id="homeBtn">
+        <h1>Soon No. <span>1</span></h1>
+        <p><span>M</span>ake Best Choice . Join Today with us on the journey to achive top place</p>
+
+    </div>
+    <div class="content">
+
+        <h1>Company</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent convallis urna a elementum consequat.
+            Vivamus auctor faucibus elit in condimentum. Vestibulum vel mattis risus. Suspendisse mollis, mi eget
+            suscipit suscipit, diam erat commodo neque, in maximus ligula mi sit amet libero. Donec consequat blandit
+            elementum. Praesent a felis eget metus posuere convallis. Nullam pellentesque ut mauris in efficitur. In hac
+            habitasse platea dictumst.
+            <br>
+            <br>
+            Ut nec pulvinar dolor, sit amet vulputate libero. Aliquam urna enim, aliquam vitae velit nec, tempus
+            pellentesque nibh. Phasellus ac volutpat magna. Sed vehicula magna scelerisque ipsum vestibulum porta.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque
+            accumsan est non justo accumsan faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia curae; Donec mattis nulla quis commodo ultricies. Fusce in pharetra est. Nunc vel semper
+            odio. Proin odio justo, porttitor vitae egestas sit amet, pellentesque a mauris.
+        </p>
+    </div>
+    <br><br><br>
+
+    <div id="aboutBtn" class="details content">
+        <h1>Details</h1>
+        <br>
+        <div class="container">
+            <div>
+
+                <div class="imgDiv" data-value="350+ Workers">
+                    <img src="https://source.unsplash.com/random/400x300/?worker,employ" alt="">
+                </div>
+                <h3>Workers</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odit eaque qui nesciunt quis facere
+                    quod quisquam tempore dicta! Quo.
+                </p>
+            </div>
+            <div>
+                <div class="imgDiv" data-value="Best Quality">
+                    <img src="https://source.unsplash.com/random/400x300/?tea" alt="">
+                </div>
+                <h3>Quality</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem assumenda veniam aliquid perspiciatis,
+                    ratione nemo temporibus voluptates fugit sapiente consectetur.</p>
+            </div>
+            <div>
+                <div class="imgDiv" data-value="Cheap Prize">
+                    <img src="https://source.unsplash.com/random/400x300/?discount" alt="">
+                </div>
+                <h3>Prize</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam magni hic vero laudantium iusto alias,
+                    excepturi quod officiis quibusdam eveniet.</p>
+            </div>
+        </div>
+
+    </div>
+    <br><br><br>
+    <div id="contactUsBtn" class="content">
+        <h1>Contact Us</h1>
+
+
+    </div>
+
+</body>
+
+</html>
