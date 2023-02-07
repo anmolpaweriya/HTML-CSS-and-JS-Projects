@@ -108,8 +108,6 @@ function updateStatus() {
 }
 
 
-randomQuoteID.classList.remove('blur');
-document.querySelector(".mainDiv").setAttribute('style', '--opacity:0')
 window.onblur = e => {
     randomQuoteID.classList.add('blur');
     document.querySelector(".mainDiv").setAttribute('style', '--opacity:1')
