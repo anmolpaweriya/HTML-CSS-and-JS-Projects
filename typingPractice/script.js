@@ -1,4 +1,3 @@
-
 const apiUrl = "https://api.quotable.io/random";
 let numb, content, color = "gray", startTime, endTime, wrongKey;
 const randomQuoteID = document.getElementById("randomQuoteID");
@@ -108,6 +107,9 @@ function updateStatus() {
 
 }
 
+
+randomQuoteID.classList.remove('blur');
+document.querySelector(".mainDiv").setAttribute('style', '--opacity:0')
 window.onblur = e => {
     randomQuoteID.classList.add('blur');
     document.querySelector(".mainDiv").setAttribute('style', '--opacity:1')
