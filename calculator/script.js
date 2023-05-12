@@ -52,7 +52,6 @@ function equalPress() { // function for equal to btn
         onHoldData = 0;
     }
     previousData = _("#display").innerText;
-    _("#display").innerText = "=" + previousData;
 
 }
 
@@ -86,7 +85,6 @@ function exchangeSign() {       // function for add btn
 function getSqrRoot() {       // function for add btn
     previousData = Number(_("#display").innerText);
     previousData = Math.sqrt(previousData).toFixed(8);
-    _("#display").innerText = "=" + previousData;
 
 }
 
