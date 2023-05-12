@@ -11,7 +11,7 @@ body {
     justify-content: center;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    url('https://dynamicwallpaper.club/landing-vids/1.png') center;
+    background :url('https://dynamicwallpaper.club/landing-vids/1.png') center;
 }
 
 .calculator {
