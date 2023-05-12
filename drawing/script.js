@@ -1,4 +1,3 @@
-
 function _(el) { return document.getElementById(el) }
 function $(el) { return document.querySelector(el) }
 
@@ -22,7 +21,8 @@ let brush_color = "#fff",
     brush_width = 4,
     activeShape, snap,
     mouse_hold = false,
-    activeTool = brush;
+    activeTool = brush,
+    startX, startY;
 
 
 canvas.width = canvas.offsetWidth;
@@ -91,7 +91,6 @@ function drawing_func(e) {
     }
 }
 
-let startX, startY;
 
 function drawing_start_func(e) {
     mouse_hold = true
@@ -109,9 +108,14 @@ function drawing_stop_func(e) {
     mouse_hold = false;
 }
 
-canvas.addEventListener('mousedown', drawing_start_func)
-canvas.addEventListener('mousemove', drawing_func)
-canvas.addEventListener('mouseup', drawing_stop_func)
+// canvas.addEventListener('mousedown', drawing_start_func)
+// canvas.addEventListener('mousemove', drawing_func)
+// canvas.addEventListener('mouseup', drawing_stop_func)
+
+canvas.onpointerdown = drawing_start_func;
+canvas.onpointermove = drawing_func;
+canvas.onpointerup = drawing_stop_func;
+
 
 color_picker.onchange = () => {
     brush_color = color_picker.value
