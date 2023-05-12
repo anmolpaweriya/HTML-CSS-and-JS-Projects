@@ -11,7 +11,7 @@ body {
     justify-content: center;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    background :url('https://dynamicwallpaper.club/landing-vids/1.png') center;
+    background: url('https://dynamicwallpaper.club/landing-vids/1.png') center;
 }
 
 .calculator {
@@ -42,6 +42,7 @@ tr:last-child :first-child {
 }
 
 td {
+    user-select: none;
     border: 1px solid #6f6672;
     padding: 0.8em;
     background-color: #7e7582;
@@ -54,6 +55,7 @@ tr>td:last-child {
 }
 
 #display {
+    user-select: text;
     text-align: right;
     grid-column-start: 1;
     grid-column-end: 5;
