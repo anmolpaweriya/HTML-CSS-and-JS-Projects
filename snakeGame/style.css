@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+}
+
+#canvasID {
+    width: 100vw;
+    background-color: #000;
+}
+
+.ButtonsDiv {
+    margin: auto;
+    margin-top: 150px;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.ButtonsDiv>button {
+    font-size: 2em;
+}
