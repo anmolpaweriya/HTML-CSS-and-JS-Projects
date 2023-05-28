@@ -18,3 +18,9 @@
 .ButtonsDiv>button {
     font-size: 2em;
 }
+
+@media (min-width:600px) {
+    .ButtonsDiv {
+        display: none;
+    }
+}
