@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: #fff !important;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 93%;
+    width: 93%;
+    position: relative;
+
+}
+
+
+#illusionDiv {
+    background-color: #000;
+    height: 400px;
+    width: 400px;
+    animation: rotate 4s ease-in-out infinite forwards;
+}
+
+#illusionDiv::after {
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.div1 {
+    background-color: #fff;
+}
+
+.div2 {
+    background-color: #000;
+}
+
+.div3 {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+}
+
+
+
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
