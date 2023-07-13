@@ -18,10 +18,11 @@ There are Some basic frontEnd Projects (HTML, CSS and JS Projects)
 |10.| [Rotate Nav Bar](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/rotateNavBar/)  | cool rotation animated nav bar |
 |11.| [Trapizoidal Nav Bar](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/trapizoidNavBar/)  | cool Trapizoidal PC nav bar |
 |12.| [Typing Practice](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/typingPractice/)  | Increase Your typing speed with practice |
-|12.| [Typing Practice 2.0](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/typingPractice2.0/)  | Typing Practice with popular words  |
-|13.| [Mac Calculator](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/calculator/)  | online Calculator with macBook Look |
-|14.| [Snake Game](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/snakeGame/)  | online Snake game ,Which you probably played in your childhood  |
-|15.| [Illusion](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/illusion/)  | rotating circle illusion 3D cone  |
+|13.| [Typing Practice 2.0](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/typingPractice2.0/)  | Typing Practice with popular words  |
+|14.| [Mac Calculator](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/calculator/)  | online Calculator with macBook Look |
+|15.| [Snake Game](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/snakeGame/)  | online Snake game ,Which you probably played in your childhood  |
+|16.| [Illusion](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/illusion/)  | rotating circle illusion 3D cone  |
+|17.| [Liquid Flow Footer](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/liquidFlowFooter/)  | animation footer Template with liquid flow animation  |
 
 
 
