@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-background-color: #2B2A33;
+    --main-text-color: #ccc;
+    --main-logo-color: #00dafb;
+    --searchbar-background-color: #42414d;
+}
+
+body {
+    background: var(--main-background-color);
+    color: var(--main-text-color);
+    font-family: 'Roboto', cursive;
+    padding-top: 200px;
+    min-height: 100vh;
+}
+
+/* id */
+
+/* classes */
+
+
+
+
+.headerDiv {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: 'Monomaniac One', sans-serif;
+}
+
+.imgLogoDiv {
+    display: flex;
+    width: fit-content;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 2px;
+    position: relative;
+    background-color: var(--main-background-color);
+    z-index: 1;
+
+    transition: 1s ease-in;
+    right: 400px;
+    rotate: 0deg;
+}
+
+.showImgLogoDiv {
+    rotate: 360deg;
+    right: 0px !important;
+}
+
+.imgLogoDiv>img {
+    background-color: var(--main-background-color);
+    border-radius: 50%;
+}
+
+.imgLogoDiv::after {
+    content: "";
+    position: absolute;
+    padding: 100px;
+    background: linear-gradient(var(--main-logo-color), transparent);
+    z-index: -1;
+    animation: outlineAnimation 1s ease-in-out infinite;
+    transform-origin: top left;
+}
+
+.animationSpan {
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    position: relative;
+    bottom: 1em;
+    opacity: 0.2;
+    color: aqua;
+}
+
+.showSpanAnimation {
+    bottom: 0em;
+    opacity: 1;
+    color: #ccc !important;
+}
+
+
+
+
+.searchBarDiv {
+    display: flex;
+    overflow: hidden;
+    background-color: var(--searchbar-background-color);
+    min-width: fit-content;
+    border-radius: 1em;
+    margin: 100px auto;
+    justify-content: space-between;
+    width: 45vw;
+}
+
+.searchBarDiv>input {
+    width: 80%;
+}
+
+.searchBarDiv>input,
+.searchBarDiv>button {
+    outline: none;
+    color: #ccc;
+    font-size: 1.2em;
+    background-color: var(--searchbar-background-color);
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+
+.savedPagesDiv {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    width: 50vw;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+
+.ShortcutClass {
+    background: var(--searchbar-background-color);
+    border: none;
+    color: var(--main-text-color);
+    /* font-size: 2em; */
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+
+.ShortcutClass:hover {
+    box-shadow: 7px 7px 7px #000;
+}
+
+/* animations */
+
+@keyframes outlineAnimation {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg
+    }
+}
