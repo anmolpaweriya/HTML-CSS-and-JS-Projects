@@ -31,7 +31,7 @@ window.onkeydown = e => {
 _("#inputFieldID").onkeydown = e => {
     e.stopPropagation();
 
-    if (e.key == "Enter") googleSearch(e.target.value)
+    if (e.target.value.trim() != "" && e.key == "Enter") googleSearch(e.target.value)
     else if (e.target.value == "" && e.key == "Backspace") disableAnimate()
     else activeAnimate()
 }
