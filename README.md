@@ -24,8 +24,8 @@ There are Some basic frontEnd Projects (HTML, CSS and JS Projects)
 |16.| [Illusion](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/illusion/)  | rotating circle illusion 3D cone  |
 |17.| [Liquid Flow Footer](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/liquidFlowFooter/)  | animation footer Template with liquid flow animation  |
 |18.| [ AP Client ](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/apClient/)  | Reast API CLIENT free web interface  |
-|19.| [ Browser Page ](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/browserPage/)  | Custom Browser Home page better than the normal one  |
-|20.| [ Browser Page 2.0](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/browserPage2.0/)  | browser page with cool svg animations  |
+|19.| [ Browser Page ](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/browserHomePage/)  | Custom Browser Home page better than the normal one  |
+|20.| [ Browser Page 2.0](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/browserHomePage2.0/)  | browser page with cool svg animations  |
 
 
 
