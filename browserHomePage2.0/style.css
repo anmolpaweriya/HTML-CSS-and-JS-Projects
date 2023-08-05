@@ -31,7 +31,7 @@ body {
 
 #glow {
 
-    filter: blur(100px);
+    filter: blur(30px);
 
 }
 
