@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
+
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R.K.S.D. College</title>
 
@@ -51,31 +52,32 @@
             grid-template-columns: auto 200px;
             overflow: hidden;
 
-            >input {
-                height: 100%;
-                box-sizing: border-box;
-                color: inherit;
-                background-color: inherit;
-                font-size: 1.2em;
-                border: none;
-                outline: none;
-                padding: 5px 20px;
-                width: 100%;
-            }
 
-            >button {
-                background-color: #08f;
-                border: none;
-                border-radius: 50px;
-                box-sizing: border-box;
-                font-size: 1.2em;
-            }
-
-            >button:hover {
-                opacity: 0.8;
-            }
         }
 
+        .searchBar>input {
+            height: 100%;
+            box-sizing: border-box;
+            color: inherit;
+            background-color: inherit;
+            font-size: 1.2em;
+            border: none;
+            outline: none;
+            padding: 5px 20px;
+            width: 100%;
+        }
+
+        .searchBar>button {
+            background-color: #08f;
+            border: none;
+            border-radius: 50px;
+            box-sizing: border-box;
+            font-size: 1.2em;
+        }
+
+        .searchBar>button:hover {
+            opacity: 0.8;
+        }
 
 
 
@@ -86,26 +88,30 @@
             gap: 1em;
             justify-content: space-evenly;
 
-            >div {
-                /* background-color: #333; */
-                background-color: #ccc;
 
-                border-radius: 20px;
-                padding: 10px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                box-shadow: 0px 0px #07f;
-                transition: 0.3s ease-in-out;
+        }
 
-                >h1 {
-                    font-size: 3em;
-                }
-            }
+        .Courses>div {
+            /* background-color: #333; */
+            background-color: #ccc;
 
-            >div:hover {
-                box-shadow: 10px 10px 10px #000;
-            }
+            border-radius: 20px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0px 0px #07f;
+            transition: 0.3s ease-in-out;
+
+
+        }
+
+        .Courses>div>h1 {
+            font-size: 3em;
+        }
+
+        .Courses>div:hover {
+            box-shadow: 10px 10px 10px #000;
         }
 
 
@@ -160,8 +166,7 @@
     <center>
 
         <h1 style="font-size: 3em; color:#fff">R.K.S.D. (P.G.) College, Kaithal</h1>
-        <br><br>
-        <br><br>
+        <br><br><br><br><br><br><br>
 
         <div class="searchBar">
             <input type="text" placeholder="Search Courses">
