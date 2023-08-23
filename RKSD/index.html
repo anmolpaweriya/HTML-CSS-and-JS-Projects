@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R.K.S.D. College</title>
 
@@ -21,6 +20,7 @@
             left: 0;
             width: 100vw;
             z-index: -1;
+
         }
 
         .underLineHeading {
@@ -109,6 +109,38 @@
         }
 
 
+        footer {
+            background-color: #3586ff;
+            width: 100vw;
+            box-sizing: border-box;
+            height: 100px;
+            position: absolute;
+
+            left: 0px;
+
+
+        }
+
+        footer>span {
+
+            position: absolute;
+            background: url('./wave.png') repeat;
+            height: 100px;
+            width: 100vw;
+            bottom: 100px;
+            animation: waveAnimation 3s ease-in-out infinite;
+        }
+
+        @keyframes waveAnimation {
+            0% {
+                background-position: 0vw 0px;
+            }
+
+            100% {
+                background-position: 1280px 0px;
+            }
+
+        }
 
         @media (max-width:800px) {
             body {
@@ -206,6 +238,13 @@
 
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <span></span>
+        <div>
+
+        </div>
+    </footer>
+
 </body>
 
 </html>
