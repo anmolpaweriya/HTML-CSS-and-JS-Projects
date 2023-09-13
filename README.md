@@ -26,7 +26,7 @@ There are Some basic frontEnd Projects (HTML, CSS and JS Projects)
 |18.| [ AP Client ](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/apClient/)  | Reast API CLIENT free web interface  |
 |19.| [ Browser Page ](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/browserHomePage/)  | Custom Browser Home page better than the normal one  |
 |20.| [ Browser Page 2.0](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/browserHomePage2.0/)  | browser page with cool svg animations  |
-|21.| [ College Site ](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/RKSD/)  | R.K.S.D. College Website prototype  |
+|21.| [ College Site ](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/BSc5thSemHTML/RKSD.html)  | R.K.S.D. College Website prototype  |
 
 
 
