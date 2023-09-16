@@ -1,36 +1,32 @@
 <html >
-<head><title>Registration </title></head>
-<body  style="font-family: monospace;" bgcolor="#0ff">
-		<h1 align="center">KUK Registration</h1>
-		<form  style="margin:50px">
-		Name : <input >
+<head><title>Registration </title>
+<style>
+	textarea,input,select,button{width: 100%; padding: 10px;}
+	input[type="radio"],input[type="file"]{width: fit-content;}
+</style>
+</head>
+<body  style="font-family: monospace;margin: 50px 15vw;background: #00ffff40;" >
+		<h1 align="center">Student Registration</h1><hr>
+		<form  style="width:500px;margin: 20px auto;">
+		Name : <input ><br><br>
+		Father Name : <input  ><br><br>
+		D.O.B. : <input type="date" ><br><br>
+		Mobile No. :<input type="number"  ><br><br>
+		   Course : <select>
+			<option>----Select-----</option>
+			<option>B.Sc.</option>
+			<option>B.A.</option>
+			<option>BCA</option>
+			<option>B.Com.</option>
+			<option>B.B.A.</option>
+		</select><br><br>
+		Gender : 
+	   	<label><input  type="radio"  name="gender" > Male </label>
+	   	<label><input  type="radio"  name="gender" > Female </label>
 		<br><br>
-		Father Name : <input  >
-		<br><br>
-		D.O.B. : <input type="date" >
-		<br><br>
-		Mobile No. : <input type="number"  >
-		<br><br>
-		Gender : <br>
-	   	<label><input type="radio"  name="gender" > Other	 </label>
-	   	<label><input type="radio"  name="gender" > Other 	 </label><br>
-		<br><br>
-	12 Marksheet : <input type="file"  >
-		<br><br>
-	Course : <select>
-		<option>----Select-----</option>
-		<option>B.Sc.</option>
-		<option>B.A.</option>
-		<option>BCA</option>
-		<option>B.Com.</option>
-		<option>B.B.A.</option>
-	</select>
-		<br><br>
-		<br>
-		Address : <br><textarea></textarea>   
-		<br><br>
-		<br><br>
-		<button >Submit</button>
+	12 Marksheet : <input  type="file"  ><br><br>
+		Address : <br><textarea rows="9"></textarea><br><br>
+		<button style="background: #0f0; border: none;" >Submit</button>
 </form>
 </body>
 </html>
