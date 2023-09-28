@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Progress Bar</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body class="centerContent">
+
+    <div class="progressBar centerContent">
+        <p>0%</p>
+    </div>
+
+
+    <input type="range" onchange="percentageChangeFunc(this)" value="69">
+    <button onclick="reloadAnimation()">reload</button>
+
+
+</body>
+
+</html>
