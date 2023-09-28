@@ -2,42 +2,32 @@
 <head>    <title>Practical 7</title>
 <style>
     *{scroll-behavior: smooth;}
-    section{height: 100vh; font-size: 3em;
+    section{height: 100vh; 
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     }
+    /* a{font-size: 2em;} */
 </style>
 </head>
-<body style="font-family: monospace">
+<body style="font-family: monospace;margin: 0px 15vw;">
     <section id="HOME"><h1>HOME</h1>
-        <div>
-            <a href="#s2">Section 2</a>
-            <a href="#s3">Section 3</a>
-            <a href="#s4">Section 4</a>
-        </div>
+        <p>HTML links are hyperlinks.
+<br><br>
+            You can click on a link and jump to another document. <br><br>
+            Attributes are :
+        </p>
+            <a href="#s2">href</a>
+            <a href="#s3">_target</a>
     </section>
-    <section id="s2" ><h1>Section 2</h1>
-        <div>
-            <a href="#HOME">HOME</a>
-            <a href="#s3">Section 3</a>
-            <a href="#s4">Section 4</a>
-        </div>
+    <section id="s2" ><h1>href</h1>
+        <p>The href attribute specifies the URL of the page the link goes to.</p>
+        <a href="#HOME">HOME</a>
     </section>
-    <section id="s3" ><h1>Section 3</h1>
-        <div>
-            <a href="#HOME">HOME</a>
-            <a href="#s2">Section 2</a>
-            <a href="#s4">Section 4</a>
-        </div>
-    </section>
-    <section id="s4" ><h1>Section 4</h1>
-        <div>
-            <a href="#HOME">HOME</a>
-            <a href="#s2">Section 2</a>
-            <a href="#s3">Section 3</a>
-        </div>
+    <section id="s3" ><h1>_target</h1>
+        <p>The target attribute specifies where to open the linked document.</p>
+        <a href="#HOME">HOME</a>
     </section>
 </body>
 </html>
