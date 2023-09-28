@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --theme-color: #009afc;
+}
+
+body {
+    height: 100svh;
+    flex-direction: column;
+    gap: 4em;
+    font-family: monospace;
+}
+
+
+.centerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressBar {
+    --size: 200px;
+    height: var(--size);
+    width: var(--size);
+    overflow: hidden;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    background: radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+        conic-gradient(var(--theme-color) var(--percentage, 0%), #ccc 0%);
+
+
+
+}
+
+.progressBar>p {
+    color: var(--theme-color);
+    font-size: 3em;
+
+
+}
+
+input {
+    width: 200px;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 2em;
+    border-radius: 10px;
+
+
+}
