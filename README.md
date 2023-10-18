@@ -28,6 +28,7 @@ There are Some basic frontEnd Projects (HTML, CSS and JS Projects)
 |20.| [ Browser Page 2.0](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/browserHomePage2.0/)  | browser page with cool svg animations  |
 |21.| [ College Site ](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/BSc5thSemHTML/RKSD.html)  | R.K.S.D. College Website prototype  |
 |22.| [ Circular Progress Bar ](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/circularProgressBar/)  | circular Stroke Progess Bar Animation |
+| 23.| [Pillow Mart Template](https://anisolepro.github.io/HTML-CSS-and-JS-Projects/pillowMartTemplate/)  | pillow mart responsive Site Template |
 
 
 
