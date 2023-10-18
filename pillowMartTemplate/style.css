@@ -52,11 +52,17 @@ nav .hamBurgerBtn {
 nav>.menuBtns {
     display: flex;
     gap: 2em;
+    transition: 0.3s ease-in-out;
+    height: 100%;
+
 }
 
 nav>.menuBtns>a {
     position: relative !important;
     height: 100%;
+    display: flex;
+    align-items: center;
+
 }
 
 nav>.menuBtns>a>.navBtnList {
@@ -67,7 +73,7 @@ nav>.menuBtns>a>.navBtnList {
     padding: 20px;
     gap: 20px;
     width: max-content;
-    top: 200%;
+    top: 100%;
 
     transform-origin: top;
     scale: 1 0;
@@ -83,16 +89,16 @@ nav>.menuBtns>a>.navBtnList {
 }
 
 
-nav>.menuBtns>a:hover .navBtnList {
-    scale: 1;
-}
+
 
 nav>.rightBtns i {
     margin: 20px;
     font-size: 1.5em !important;
 }
 
-
+.showMenuBtns {
+    scale: 1 !important;
+}
 
 
 /* Hero section  */
@@ -161,6 +167,11 @@ button:hover {
 
 
 /* media queries */
+@media (min-width : 1000px) {
+    nav>.menuBtns>a:hover .navBtnList {
+        scale: 1;
+    }
+}
 
 @media (max-width : 1400px) {
     nav {
@@ -187,8 +198,24 @@ button:hover {
     }
 
     nav .menuBtns {
-        display: none;
+        /* display: none; */
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100vw;
+        border-bottom: 2px solid var(--theme-color);
+
+        box-sizing: border-box;
+        padding: 20px;
+        transform-origin: top;
+        scale: 1 0;
     }
+
+
+
+
 
     nav img {
         height: 30px;
