@@ -8,6 +8,16 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        function _(el) { return document.querySelector(el) }
+
+        function toggleHamBurgerBtn() {
+            _('nav .menuBtns').classList.toggle("showMenuBtns")
+        }
+
+
+    </script>
 </head>
 
 <body>
@@ -15,7 +25,7 @@
 
     <!-- navbar -->
     <nav>
-        <div class="hamBurgerBtn"><i class="fa fa-navicon"></i> </div>
+        <div class="hamBurgerBtn" onclick="toggleHamBurgerBtn()"><i class="fa fa-navicon"></i> </div>
         <div>
             <img height="40" src="https://preview.colorlib.com/theme/pillowmart/img/logo.png.webp" alt="">
         </div>
@@ -23,7 +33,7 @@
 
             <a href="#">Home</a>
             <a href="#">About</a>
-            <a href="#">Product <i class="	fa fa-caret-down"></i>
+            <a href="#"> Product <i class="	fa fa-caret-down"></i>
                 <div class="navBtnList">
                     <p href="#">Product List</p>
                     <p href="#">Product Details</p>
