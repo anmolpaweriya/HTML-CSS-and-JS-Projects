@@ -1,0 +1,220 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --theme-color: #B08EAD;
+    --font-color: #4B3049;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/* nav Bar */
+
+nav {
+    display: flex;
+    width: 68vw;
+    margin: auto;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+
+nav a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-weight: 400;
+
+    >i {
+        margin: 0px 10px;
+    }
+}
+
+nav .hamBurgerBtn {
+    display: none;
+    font-size: 1.5em;
+}
+
+nav>.menuBtns {
+    display: flex;
+    gap: 2em;
+}
+
+nav>.menuBtns>a {
+    position: relative !important;
+    height: 100%;
+}
+
+nav>.menuBtns>a>.navBtnList {
+    position: absolute;
+    display: grid;
+    background-color: var(--theme-color);
+    border-radius: 5px;
+    padding: 20px;
+    gap: 20px;
+    width: max-content;
+    top: 200%;
+
+    transform-origin: top;
+    scale: 1 0;
+
+    transition: 0.3s ease-in-out;
+
+    >p {
+        color: #fff;
+        font-size: 0.9em;
+        font-weight: 500;
+
+    }
+}
+
+
+nav>.menuBtns>a:hover .navBtnList {
+    scale: 1;
+}
+
+nav>.rightBtns i {
+    margin: 20px;
+    font-size: 1.5em !important;
+}
+
+
+
+
+/* Hero section  */
+
+
+.HeroSection {
+    display: flex;
+    width: 100vw;
+    box-sizing: border-box;
+    padding-left: 16vw;
+    align-items: center;
+}
+
+.HeroSection>.leftSide>h1 {
+    font-size: 4em;
+    color: var(--font-color);
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.HeroSection>.leftSide>p {
+    color: #795376;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.HeroSection img {
+    width: 53vw;
+}
+
+
+.HeroSection::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 70vh;
+    width: 13vw;
+    background-color: var(--theme-color);
+}
+
+
+
+
+/* buttons */
+
+
+button {
+    padding: 1em 2.5em;
+    border-radius: 5px;
+    background: var(--theme-color);
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    border: 2px solid transparent;
+
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    border: 2px solid var(--theme-color);
+    color: var(--theme-color);
+    background: #fff;
+}
+
+
+
+/* media queries */
+
+@media (max-width : 1400px) {
+    nav {
+        width: 90vw;
+    }
+
+    .HeroSection::after {
+        display: none;
+    }
+
+    .HeroSection {
+        padding-left: 10vw;
+    }
+}
+
+
+@media (max-width : 1000px) {
+    nav {
+        width: 80vw;
+    }
+
+    nav .hamBurgerBtn {
+        display: block;
+    }
+
+    nav .menuBtns {
+        display: none;
+    }
+
+    nav img {
+        height: 30px;
+    }
+
+
+    .HeroSection>.leftSide>h1 {
+        font-size: 2.5em;
+    }
+
+    .HeroSection>.leftSide>p {
+        font-size: 1em;
+    }
+
+}
+
+
+@media (max-width : 500px) {
+    .HeroSection {
+        flex-direction: column;
+        gap: 1em;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0px 50px;
+
+        height: 90vh;
+
+    }
+}
