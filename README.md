@@ -34,3 +34,18 @@ This repository contains a collection of basic web development projects built us
 
 - [Official Site](https://anisole.000.pe) for more information and updates.
 - [My Portfolio](https://anmolpaweriya.vercel.app/) to explore more about me and my work.
+
+
+
+## Contributing
+
+Contributions are always welcome! If you want to contribute to this project, you can follow these steps:
+
+1. Fork this repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to your forked repository (`git push origin feature/your-feature-name`).
+6. Open a Pull Request.
+
+Please make sure your code follows the project's coding conventions and passes any relevant tests.
